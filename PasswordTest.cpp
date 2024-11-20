@@ -24,6 +24,6 @@ TEST(PasswordTest, single_letter_password)
 TEST(PasswordTest, three_letter_password)
 {
 	Password my_password;
-	int actual = my_password.count_leading_characters("bAc");
+	int actual = my_password.has_mixed_case("bAc");
 	ASSERT_EQ(3, actual);
 }
